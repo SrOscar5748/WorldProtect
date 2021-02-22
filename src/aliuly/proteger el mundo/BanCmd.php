@@ -1,17 +1,17 @@
-<?php
-//= cmd:bancmd|unbancmd,Sub_Commands
-//: Prevents commands to be used in worlds
-//> usage: /wp _[world]_ **bancmd|unbancmd** _[command]_
+<? php
+// = cmd: bancmd | unbancmd, Sub_Commands
+//: Evita que los comandos se utilicen en mundos
+//> uso: / wp _ [mundo] _ ** bancmd | unbancmd ** _ [comando] _
 //:
-//: If no commands are given it will show a list of banned
-//: commands.   Otherwise the _command_ will be added/removed
-//: from the ban list
+//: Si no se dan comandos, se mostrará una lista de prohibidos
+//: commands.   Otherwise the _command_ will be added/removed<?php
+//: de la lista de prohibiciones
 //:
-//= features
-//: * Ban commands on a per world basis
-namespace aliuly\worldprotect;
+// = características
+//: * Prohibir comandos por mundo
+espacio de nombres  aliuly \ worldprotect ;
 
-use pocketmine\plugin\PluginBase as Plugin;
+use  pocketmine \ plugin \ PluginBase  como  complemento ;
 use pocketmine\event\Listener;
 use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
